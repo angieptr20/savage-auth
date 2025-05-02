@@ -11,7 +11,7 @@ var passport = require('passport');
 var flash    = require('connect-flash');
 
 var morgan       = require('morgan');
-var cookieParser = require('cookie-parser');
+var cookieParser = require('cookie-parser'); //how we know is the user is logged in
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
 
@@ -40,7 +40,7 @@ app.set('view engine', 'ejs'); // set up ejs for templating
 
 // required for passport
 app.use(session({
-    secret: 'rcbootcamp2021b', // session secret
+    secret: 'rcbootcamp2025a', // session secret
     resave: true,
     saveUninitialized: true
 }));
